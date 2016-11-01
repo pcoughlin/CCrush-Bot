@@ -1,0 +1,6 @@
+{
+  "name": "Ccrush-bot",
+  "tagline": "A python bot that plays candy crush",
+  "body": "A python bot that plays Candy Crush.\r\n\r\nDue to lack of time when I coded this I warn you that it's full of hardcoded stuff :).\r\n\r\nThis is how it works: \r\n\r\n1. Take a screenshot of the desktop\r\n2. Extract the game board from it\r\n3. From that game board extract each cell\r\n4. Using a classification algorithm determine what candy is in each cell\r\n5. Compute the best move using a greedy-like algorithm\r\n6. Send Inputs to the browser window\r\n7. Wait for the board to stabilize and all the movement to stop\r\n8. Goto 1 :)\r\n\r\nThe main problem now is the fact that I hardcoded the position of the board in the screenshot. You need to adjust the offsets of it in order to match the ones for your browser and screen size.\r\n\r\nIt works with python 2.7 and needs the libraries: scikit-learn, PIL, win32api.\r\n\r\nYou can watch it in action here: https://www.youtube.com/watch?v=18vqQOPlvO4\r\n\r\nThere is a more in-depth explanation about how it works here: http://www.clickalot.me/candy-crush-bot/\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

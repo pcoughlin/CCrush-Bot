@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ccrush-bot by pcoughlin</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ccrush-bot</h1>
+        <p>A python bot that plays candy crush</p>
+
+        <p class="view"><a href="https://github.com/pcoughlin/CCrush-Bot">View the Project on GitHub <small>pcoughlin/CCrush-Bot</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/pcoughlin/CCrush-Bot/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pcoughlin/CCrush-Bot/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pcoughlin/CCrush-Bot">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>A python bot that plays Candy Crush.</p>
+
+<p>Due to lack of time when I coded this I warn you that it's full of hardcoded stuff :).</p>
+
+<p>This is how it works: </p>
+
+<ol>
+<li>Take a screenshot of the desktop</li>
+<li>Extract the game board from it</li>
+<li>From that game board extract each cell</li>
+<li>Using a classification algorithm determine what candy is in each cell</li>
+<li>Compute the best move using a greedy-like algorithm</li>
+<li>Send Inputs to the browser window</li>
+<li>Wait for the board to stabilize and all the movement to stop</li>
+<li>Goto 1 :)</li>
+</ol>
+
+<p>The main problem now is the fact that I hardcoded the position of the board in the screenshot. You need to adjust the offsets of it in order to match the ones for your browser and screen size.</p>
+
+<p>It works with python 2.7 and needs the libraries: scikit-learn, PIL, win32api.</p>
+
+<p>You can watch it in action here: <a href="https://www.youtube.com/watch?v=18vqQOPlvO4">https://www.youtube.com/watch?v=18vqQOPlvO4</a></p>
+
+<p>There is a more in-depth explanation about how it works here: <a href="http://www.clickalot.me/candy-crush-bot/">http://www.clickalot.me/candy-crush-bot/</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/pcoughlin">pcoughlin</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
